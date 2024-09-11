@@ -6,6 +6,11 @@ import {inter } from "../../fonts";
 import { InvoicesTableSkeleton } from "../../skeletons";
 import { Suspense } from "react";
 import { fetchInvoicesPages } from "@/app/lib/data";
+import { Metadata } from 'next';
+ 
+export const metadata: Metadata = {
+  title: 'Invoices',
+};
 
 export default async function InvoicePage({
     searchParams,
